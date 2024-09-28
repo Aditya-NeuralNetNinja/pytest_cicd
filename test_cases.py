@@ -1,4 +1,4 @@
-from pytest_cicd.multiply import mult
+from multiply import mult
 
 def test_case1(): 
     result = 10
