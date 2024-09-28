@@ -6,8 +6,8 @@ def test_case1():
     
 
 def test_case2():
-    result = 6
-    assert mult(2,5) == result
+    result = 1
+    assert mult(0.2,5) == result
     
     
 def test_case3():
