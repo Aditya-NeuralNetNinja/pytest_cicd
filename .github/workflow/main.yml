@@ -20,14 +20,16 @@ jobs:
 
       - name: Create virtual environment
         run: |
-          python3.9 -m venv gitenv
+          python -m venv gitenv
 
       - name: Activate virtual environment
         run: |
-          source/envgit/bin/activate
+          source envgit/bin/activate
 
       - name: Install dependencies
-        run: pip install pytest
+        run: |
+             python -m pip install --upgrade pip
+             pip install pytest
 
       - name: Run test cases
         run: pytest -v
